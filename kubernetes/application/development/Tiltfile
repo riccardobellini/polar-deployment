@@ -5,3 +5,4 @@ include('../../../../catalog-service/Tiltfile')
 include('../../../../dispatcher-service/Tiltfile')
 
 update_settings(max_parallel_updates=1)
+docker_prune_settings(disable = False, max_age_mins = 30, num_builds = 3, keep_recent = 1) 
